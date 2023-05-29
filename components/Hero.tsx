@@ -1,0 +1,35 @@
+import React from "react"
+import Button from "./Button"
+import HeroAnimations from "./HeroAnimations"
+
+export default function Hero() {
+  return (
+    <section className="relative bg-[#A3F7F7] h-[802px]">
+      <div className="relative z-10 grid max-w-screen-2xl px-4 py-8 mx-auto">
+        <div className="mr-auto mt-20">
+          <h1 className="max-w-2xl mb-4 text-5xl font-extrabold tracking-tight leading-none md:text-7xl xl:text-8xl">
+            Antalpha
+          </h1>
+          <h1 className="mb-4 text-5xl font-extrabold tracking-tight leading-none md:text-7xl xl:text-8xl">
+            HackerHouse - ZKML
+          </h1>
+          <div>
+            <p className="max-w-2xl text-secondary-black md:text-lg lg:text-xl font-ps">
+              Date: 13th July 2023 - 20th July 2023 (1 week)
+            </p>
+            <p className="max-w-2xl text-secondary-black mb-8 md:text-lg lg:text-xl font-ps">
+              Location： Paris, France
+            </p>
+          </div>
+          <a href="#">
+            <Button className="uppercase" variant="primary">
+              Apply to Hack {"->"}
+            </Button>
+          </a>
+        </div>
+      </div>
+
+      <HeroAnimations />
+    </section>
+  )
+}
