@@ -2,15 +2,21 @@
 
 import React, { useState, ComponentProps } from "react"
 import Link from "next/link"
+import { Montserrat } from "next/font/google"
 import "./navi.css"
 
 import smalllogo from "../public/images/navi/logo.svg"
+
+const montserrat = Montserrat({
+  preload: true,
+  subsets: ["cyrillic"],
+})
 
 export default function Header(props: ComponentProps<"div">) {
   const [isNavShowing, setIsNavShowing] = useState(false)
   return (
     <div
-      className="navi"
+      className={`navi ${montserrat.className}`}
       style={{
         ...props.style,
       }}
@@ -41,7 +47,7 @@ export default function Header(props: ComponentProps<"div">) {
         <div
           className="menu"
           onClick={() => setIsNavShowing((prev) => !prev)}
-        ></div>
+        />
         {isNavShowing ? (
           <ul className="navi-links">
             <li className="navi-links__item">

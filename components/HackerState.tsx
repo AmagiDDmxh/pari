@@ -14,11 +14,15 @@ export default function HackerState() {
       <div className="h-11 bg-secondary-black relative z-30" />
 
       <div className="absolute h-[100vh] md:h-[93vh] w-[100vw] bg-[#9290F2] overflow-hidden -z-10" />
-      <img
-        src="/images/hackerstate-background.svg"
-        alt="Chill hacker state background"
-        className="sticky top-10 left-0 right-0 -bottom-32 z-0 object-cover w-full h-full transform translate-y-36 scale-125 h-[100vh] md:h-[93vh] w-[100vw] "
-      />
+
+      <div className="sticky top-10 left-0 right-0 -bottom-32 z-0 h-[100vh] md:h-[93vh] w-full max-w-full overflow-hidden">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src="/images/hackerstate-background.svg"
+          alt="Chill hacker state background"
+          className="absolute top-0 left-0 right-0 -bottom-32 z-0 object-cover transform translate-y-36 scale-125 h-[100vh] md:h-[93vh] w-full max-w-full"
+        />
+      </div>
 
       <div className="w-full flex justify-end absolute top-0 left-0 right-0 bottom-0 -z-10">
         <div className="max-w-sm lg:max-w-screen-sm mt-[16vh] lg:mt-[24vh] mr-8 md:mr-12 lg:mr-32 md:sm-32 text-primary-black text-3xl lg:text-4xl space-y-4">

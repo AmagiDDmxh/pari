@@ -35,7 +35,6 @@
 .navi-links {
   display: flex;
   gap: 3.75rem;
-  font-family: "Montserrat5";
   font-size: 24px;
   list-style: none;
   justify-content: center;
@@ -137,7 +136,6 @@
   }
 
   .navi-links__item {
-    font-family: "mobileMontserrat";
     font-size: 0.875rem;
     height: 3.75rem;
     background-image: url("/images/navi/navibg_small.png");
