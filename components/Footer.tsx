@@ -29,7 +29,7 @@ export default function Footer() {
           <Link
             href="https://t.me/AntalphaLabs"
             target="_blank"
-            className="underline tracking-widest"
+            className="underline underline-offset-4 decoration-1 tracking-widest font-ps font-medium text-xl"
           >
             or contact us at telegram
           </Link>

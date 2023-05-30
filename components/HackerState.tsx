@@ -11,7 +11,7 @@ export default function HackerState() {
 
   return (
     <section className="relative z-0" ref={containerRef}>
-      <div className="h-11 bg-secondary-black relative z-30" />
+      <div className="h-11 bg-stone-black relative z-30" />
 
       <div className="absolute h-[100vh] md:h-[93vh] w-[100vw] bg-[#9290F2] overflow-hidden -z-10" />
 
@@ -44,11 +44,11 @@ export default function HackerState() {
         </div>
       </div>
 
-      <div className="relative z-40 bg-secondary-black text-white py-24 px-20 flex flex-col">
+      <div className="relative z-40 bg-stone-black text-white py-24 px-20 flex flex-col">
         <h1 className="text-5xl font-bold">Why ZKML ?</h1>
 
-        <div className="flex flex-wrap justify-between mt-8 -mr-20">
-          <div className="mb-12 md:w-1/2 lg:w-1/3 pr-20 space-y-6">
+        <div className="flex flex-wrap justify-between mt-8 -mr-20 pr-8">
+          <div className="mb-16 max-w-[34rem] pr-8 space-y-10">
             <h5 className="text-xl font-ps font-medium">Risky</h5>
             <h1 className="text-5xl font-bold leading-tight">
               The flaws of Traditional Platforms
@@ -62,7 +62,7 @@ export default function HackerState() {
             </p>
           </div>
 
-          <div className="mb-12 md:w-1/2 lg:w-1/3 pr-20 space-y-6">
+          <div className="mb-16 max-w-[34rem] pr-8 space-y-10">
             <h5 className="text-xl font-ps font-medium">Innovative</h5>
             <h1 className="text-5xl font-bold leading-tight">
               The Solution of ZKML
@@ -76,7 +76,7 @@ export default function HackerState() {
             </p>
           </div>
 
-          <div className="mb-12 md:w-1/2 lg:w-1/3 pr-20 space-y-6">
+          <div className="mb-16 max-w-[34rem] pr-8 space-y-10">
             <h5 className="text-xl font-ps font-medium">Promising</h5>
             <h1 className="text-5xl font-bold leading-tight">
               The Benefits of ZKML

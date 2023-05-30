@@ -28,7 +28,9 @@ export default function Header(props: ComponentProps<"div">) {
         </Link>
         <ul className="navi-links">
           <li className="navi-links__item1">
-            <Link href="/hackerhouse">Hacker House</Link>
+            <Link href="https://labs.antalpha.com/hackerhouse/" rel="same">
+              Hacker House
+            </Link>
             <div className="line"></div>
           </li>
           <li className="navi-links__item2">
