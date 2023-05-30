@@ -6,8 +6,8 @@ import HeroAnimations from "./HeroAnimations"
 export default function Hero() {
   return (
     <section className="relative bg-[#A3F7F7] h-[802px]">
-      <div className="relative z-10 grid max-w-screen-2xl px-4 py-8 mx-auto">
-        <div className="mr-auto mt-20 ml-4 sm:ml-8 md:ml-6 lg:ml-8 xl:ml-10 2xl:ml-0">
+      <div className="relative grid max-w-[1920px] h-full px-4 py-8 mx-auto">
+        <div className="relative z-10 mr-auto mt-20 ml-4 sm:ml-8 md:ml-6 lg:ml-8 xl:ml-10">
           <h1 className="max-w-2xl mb-4 text-6xl font-extrabold tracking-tight leading-none md:text-7xl xl:text-8xl">
             Antalpha
           </h1>
@@ -28,9 +28,9 @@ export default function Hero() {
             </Button>
           </Link>
         </div>
-      </div>
 
-      <HeroAnimations />
+        <HeroAnimations />
+      </div>
     </section>
   )
 }

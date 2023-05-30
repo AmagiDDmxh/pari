@@ -15,7 +15,7 @@ const montserrat = Montserrat({
 export default function Header(props: ComponentProps<"div">) {
   const [isNavShowing, setIsNavShowing] = useState(false)
   return (
-    <div
+    <header
       className={`navi ${montserrat.className}`}
       style={{
         ...props.style,
@@ -68,6 +68,6 @@ export default function Header(props: ComponentProps<"div">) {
           <></>
         )}{" "}
       </div>
-    </div>
+    </header>
   )
 }
