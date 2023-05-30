@@ -9,7 +9,7 @@ import CoolOff from "./icon/CoolOff"
 
 export default function Questions() {
   return (
-    <section className="px-8 md:px-20 lg:px-48 py-40 bg-white">
+    <section className="px-8 md:px-20 lg:px-48 py-40 bg-white relative z-10">
       <h1 className="text-8xl font-bold">Good to know~</h1>
 
       <div className="w-full px-4 mt-48 text-primary-black relative">

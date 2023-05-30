@@ -10,43 +10,33 @@ export default function HackerState() {
   const containerRef = useRef(null)
 
   return (
-    <section className="" ref={containerRef}>
-      <div className="-z-20 relative">
-        <div className="h-11 bg-secondary-black relative z-30" />
+    <section className="relative z-0" ref={containerRef}>
+      <div className="h-11 bg-secondary-black relative z-30" />
 
-        <div className="h-[100vh] md:h-[80vh] w-[100vw] bg-[#9290F2] overflow-hidden">
-          <div
-            className={cx(
-              "fixed top-0 left-auto right-auto z-10 w-full h-full",
-            )}
-          >
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src="/images/hackerstate-background.svg"
-              alt="Chill hacker state background"
-              className="absolute left-0 right-0 -bottom-32 z-20 object-cover w-full h-full transform rotate-[2deg] scale-125"
-            />
-          </div>
+      <div className="absolute h-[100vh] md:h-[93vh] w-[100vw] bg-[#9290F2] overflow-hidden -z-10" />
+      <img
+        src="/images/hackerstate-background.svg"
+        alt="Chill hacker state background"
+        className="sticky top-10 left-0 right-0 -bottom-32 z-0 object-cover w-full h-full transform translate-y-36 scale-110 h-[100vh] md:h-[93vh] w-[100vw] "
+      />
 
-          <div className="w-full flex items-center justify-end">
-            <div className="max-w-sm lg:max-w-screen-sm mt-40 mr-20 md:sm-32 relative z-0 text-primary-black text-3xl space-y-4">
-              <h1 className="font-bold">Our Hacker State Includes...</h1>
-              <p className="font-medium bg-white rounded-2xl px-4 py-6 max-w-fit">
-                Hack Zk by Lambda Class
-              </p>
-              <p className="font-medium bg-white rounded-2xl px-4 py-6 max-w-fit">
-                Autonomous World gaming House
-              </p>
-              <p className="font-medium bg-white rounded-2xl px-4 py-6 max-w-fit">
-                Sozu Haus
-              </p>
-              <h1 className="text-8xl text-white">...</h1>
-              <h1 className="font-bold">
-                And no need to FOMO as we bring people together on hacker
-                village gatherings.
-              </h1>
-            </div>
-          </div>
+      <div className="w-full flex justify-end absolute top-0 left-0 right-0 bottom-0 -z-10">
+        <div className="max-w-sm lg:max-w-screen-sm mt-[16vh] lg:mt-[24vh] mr-8 md:mr-12 md:sm-32 text-primary-black text-3xl lg:text-4xl space-y-4">
+          <h1 className="font-bold">Our Hacker State Includes...</h1>
+          <p className="font-medium bg-white rounded-2xl px-4 py-6 max-w-fit">
+            Hack Zk by Lambda Class
+          </p>
+          <p className="font-medium bg-white rounded-2xl px-4 py-6 max-w-fit">
+            Autonomous World gaming House
+          </p>
+          <p className="font-medium bg-white rounded-2xl px-4 py-6 max-w-fit">
+            Sozu Haus
+          </p>
+          <h1 className="text-8xl text-white">...</h1>
+          <h1 className="font-bold">
+            And no need to FOMO as we bring people together on hacker village
+            gatherings.
+          </h1>
         </div>
       </div>
 

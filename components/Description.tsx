@@ -114,7 +114,7 @@ const DescriptionCard = ({
 
 export default function Description() {
   return (
-    <section className="p-10 sm:32 md:p-48 text-primary-black relative bg-white w-full">
+    <section className="p-10 sm:32 md:p-48 text-primary-black relative bg-white w-full z-10">
       <div className="flex flex-wrap gap-24 items-center mb-16">
         <HaveFunCircle className="hover:animate-spin-medium" />
 
