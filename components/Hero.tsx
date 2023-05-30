@@ -1,4 +1,5 @@
 import React from "react"
+import Link from "next/link"
 import Button from "./Button"
 import HeroAnimations from "./HeroAnimations"
 
@@ -6,8 +7,8 @@ export default function Hero() {
   return (
     <section className="relative bg-[#A3F7F7] h-[802px]">
       <div className="relative z-10 grid max-w-screen-2xl px-4 py-8 mx-auto">
-        <div className="mr-auto mt-20">
-          <h1 className="max-w-2xl mb-4 text-5xl font-extrabold tracking-tight leading-none md:text-7xl xl:text-8xl">
+        <div className="mr-auto mt-20 ml-4 sm:ml-8 md:ml-6 lg:ml-8 xl:ml-10 2xl:ml-0">
+          <h1 className="max-w-2xl mb-4 text-6xl font-extrabold tracking-tight leading-none md:text-7xl xl:text-8xl">
             Antalpha
           </h1>
           <h1 className="mb-4 text-5xl font-extrabold tracking-tight leading-none md:text-7xl xl:text-8xl">
@@ -21,11 +22,11 @@ export default function Hero() {
               Location： Paris, France
             </p>
           </div>
-          <a href="#">
+          <Link href="https://tally.so/r/mZoJvy" target="_blank" rel="next">
             <Button className="uppercase" variant="primary">
               Apply to Hack {"->"}
             </Button>
-          </a>
+          </Link>
         </div>
       </div>
 

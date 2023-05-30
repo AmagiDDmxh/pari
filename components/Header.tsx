@@ -1,6 +1,6 @@
 "use client"
 
-import React, { useState, useRef, ComponentProps } from "react"
+import React, { useState, ComponentProps } from "react"
 import Link from "next/link"
 import "./navi.css"
 
@@ -36,7 +36,7 @@ export default function Header(props: ComponentProps<"div">) {
       {/* 移动端 */}
       <div className="mobile">
         <a href="/" className="mobilelogo">
-          <img src={smalllogo}></img>
+          <img src={smalllogo.src}></img>
         </a>
         <div
           className="menu"

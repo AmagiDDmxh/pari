@@ -1,4 +1,5 @@
 import React, { PropsWithChildren, ReactElement } from "react"
+import Link from "next/link"
 import Card from "./Card"
 import RightArrow from "./RightArrow"
 import Button from "./Button"
@@ -10,7 +11,6 @@ import { ReactNode } from "react"
 import DinnerBackground from "./icon/DinnerBackground"
 import Heart from "./icon/Heart"
 import Accommodation from "./icon/Accommodation"
-import Link from "next/link"
 import HaveFunCircle from "./icon/HaveFunCircle"
 
 const DescriptionCard = ({
@@ -40,24 +40,32 @@ const DescriptionCard = ({
         "bg-[#9290F266]": color === "purple",
       })}
     >
-      <div className="flex items-end gap-3">
-        {icon}
-        <h5 className="text-secondary-black uppercase">{heading}</h5>
-      </div>
-
-      <h1 className="mt-8 text-7xl font-bold max-w-sm">{title}</h1>
-
-      <p className="mt-7 text-xl font-medium">{content}</p>
-
-      <div className="flex w-full justify-between mt-48 pb-">
-        <a href={link} className="-ml-6 z-10" target="_blank" rel="noreferral">
-          <Button
-            className="text-secondary-black tracking-wide uppercase inline-flex justify-center items-center gap-4 hover:translate-x-2"
-            variant="ghost"
+      <div className="relative z-10">
+        <div className="flex items-end gap-3">
+          {icon}
+          <h5 className="text-secondary-black uppercase font-ps pb-2">
+            {heading}
+          </h5>
+        </div>
+        <h1 className="mt-8 text-7xl font-bold max-w-lg leading-[5rem]">
+          {title}
+        </h1>
+        <p className="mt-7 text-xl font-medium font-ps max-w-md">{content}</p>
+        <div className="flex w-full justify-between mt-48 pb-">
+          <a
+            href={link}
+            className="-ml-6 z-10"
+            target="_blank"
+            rel="noreferral"
           >
-            Learn More <RightArrow />
-          </Button>
-        </a>
+            <Button
+              className="text-secondary-black tracking-wide uppercase inline-flex justify-center items-center gap-4 hover:translate-x-2"
+              variant="ghost"
+            >
+              Learn More <RightArrow />
+            </Button>
+          </a>
+        </div>
       </div>
 
       <div className="absolute z-0 right-0 bottom-0">{bgIcon}</div>
@@ -106,15 +114,20 @@ const DescriptionCard = ({
 
 export default function Description() {
   return (
-    <section className="p-10 sm:32 md:p-48 text-primary-black relative bg-white">
+    <section className="p-10 sm:32 md:p-48 text-primary-black relative bg-white w-full">
       <div className="flex flex-wrap gap-24 items-center mb-16">
         <HaveFunCircle className="hover:animate-spin-medium" />
 
-        <div className="text-6xl mb-20">
-          <h1>If you have missed the</h1>
-          <span className="bg-[#A3F7F7] text-secondary-black p-1 rounded-2xl">
-            Zuzalu Vibes
-          </span>
+        <div className="text-6xl mb-20 font-bold space-y-2">
+          <h1>If you have missed</h1>
+
+          <div className="inline-flex gap-4">
+            <h1>the</h1>
+            <span className="bg-[#A3F7F7] text-secondary-black p-1 rounded-2xl font-ps font-medium">
+              Zuzalu Vibes
+            </span>
+          </div>
+
           <h1>
             We bring them to <span className="text-[#E497FF]">Paris</span> for{" "}
             <span className="text-[#E497FF]">YOU</span>
@@ -124,12 +137,14 @@ export default function Description() {
 
       <div className="mx-auto flex flex-wrap gap-10">
         <div className="flex-[45%] space-y-10">
-          <div className="space-y-2">
-            <h1 className="font-bold text-6xl">
-              Network state 🪩 but for hackers ?! Hell’ya LFG !
-            </h1>
+          <div className="space-y-3">
+            <h1 className="font-bold text-6xl">Network state 🪩</h1>
 
-            <p className="text-xl">
+            <h1 className="font-bold text-6xl">but for hackers ?!</h1>
+
+            <h1 className="font-bold text-6xl">Hell’ya LFG !</h1>
+
+            <p className="text-xl font-ps">
               In July, a worldwide group of developers, designers, creators, and
               thinkers will unite at 🤌{" "}
               <Link
@@ -160,9 +175,21 @@ export default function Description() {
         <div className="flex-[45%] space-y-10">
           <DescriptionCard
             icon={<Accommodation />}
-            heading="What events will happen?"
-            title="Workshops & Sessions"
-            content="Learn, exchange, and collaborate with experts and peers in your field."
+            heading="Large house For party"
+            title="Free Accommodation"
+            content={
+              <p>
+                Complimentary accommodation in{" "}
+                <span className="underline underline-offset-4 decoration-1">
+                  a stunning private villa
+                </span>
+                , and{" "}
+                <span className="underline underline-offset-4 decoration-1">
+                  a Private Luxury car
+                </span>
+                .
+              </p>
+            }
             link="/learn-more"
             bgIcon={<Furniture />}
             color="purple"
@@ -171,9 +198,21 @@ export default function Description() {
 
           <DescriptionCard
             icon={<Heart />}
-            heading="What events will happen?"
-            title="Workshops & Sessions"
-            content="Learn, exchange, and collaborate with experts and peers in your field."
+            heading="Are we going to have fun? ( For sure )"
+            title="Leisure & Networking"
+            content={
+              <p>
+                Activities designed for{" "}
+                <span className="underline underline-offset-4 decoration-1">
+                  networking and bonding
+                </span>
+                , as well as gourmet meals crafted by our in-house chef &{" "}
+                <span className="underline underline-offset-4 decoration-1">
+                  French breakfast
+                </span>
+                .
+              </p>
+            }
             link="/learn-more"
             bgIcon={<DinnerBackground />}
             color="pink"

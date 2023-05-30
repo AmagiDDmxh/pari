@@ -26,7 +26,7 @@ export default function Questions() {
             {({ open }) => (
               <>
                 <Disclosure.Button className="flex w-full justify-between rounded-lg px-4 py-8 text-left text-sm font-medium border-t focus:outline-none focus-visible:ring focus-visible:ring-neutral-500 focus-visible:ring-opacity-75">
-                  <h1 className="text-6xl font-bold">
+                  <h1 className="text-6xl font-bold mr-auto flex-1">
                     What is your refund policy?
                   </h1>
                   <XMarkIcon
@@ -45,7 +45,7 @@ export default function Questions() {
                   leaveFrom="transform opacity-100 max-h-full"
                   leaveTo="transform opacity-0 max-h-0"
                 >
-                  <Disclosure.Panel className="max-w-2xl px-4 pb-8 py-4 text-sm font-medium leading-7 text-secondary-black">
+                  <Disclosure.Panel className="max-w-2xl px-4 pb-8 py-2 text-sm font-ps font-medium leading-7 text-secondary-black">
                     Mandatory requirements (for ETHCC AHH only): ZKML-Engineers
                     or ZK-enthusiasts who’s willing to combine ZKML with their
                     field of expertise (such as AI engineer or game developer).
@@ -61,7 +61,7 @@ export default function Questions() {
             {({ open }) => (
               <>
                 <Disclosure.Button className="flex w-full justify-between rounded-lg px-4 py-8 text-left text-sm font-medium border-t focus:outline-none focus-visible:ring focus-visible:ring-neutral-500 focus-visible:ring-opacity-75">
-                  <h1 className="text-6xl font-bold">Location & Dates</h1>
+                  <h1 className="text-6xl font-bold mr-auto flex-1">Location & Dates</h1>
                   <XMarkIcon
                     className={cx(
                       `transition-transform duration-300 delay-0 transform h-12 w-12`,
@@ -78,7 +78,7 @@ export default function Questions() {
                   leaveFrom="transform opacity-100 max-h-full"
                   leaveTo="transform opacity-0 max-h-0"
                 >
-                  <Disclosure.Panel className="max-w-2xl px-4 pb-8 text-sm font-medium leading-7 text-secondary-black">
+                  <Disclosure.Panel className="max-w-2xl px-4 pb-8 py-2 text-sm font-ps font-medium leading-7 text-secondary-black">
                     Mandatory requirements (for ETHCC AHH only): ZKML-Engineers
                     or ZK-enthusiasts who’s willing to combine ZKML with their
                     field of expertise (such as AI engineer or game developer).
@@ -94,7 +94,7 @@ export default function Questions() {
             {({ open }) => (
               <>
                 <Disclosure.Button className="flex w-full justify-between rounded-lg px-4 py-8 text-left text-sm font-medium border-t focus:outline-none focus-visible:ring focus-visible:ring-neutral-500 focus-visible:ring-opacity-75">
-                  <h1 className="text-6xl font-bold">Who are WE?</h1>
+                  <h1 className="text-6xl font-bold mr-auto flex-1">Who are WE?</h1>
                   <XMarkIcon
                     className={cx(
                       `transition-transform duration-300 delay-0 transform h-12 w-12`,
@@ -111,7 +111,7 @@ export default function Questions() {
                   leaveFrom="transform opacity-100 max-h-full"
                   leaveTo="transform opacity-0 max-h-0"
                 >
-                  <Disclosure.Panel className="max-w-2xl px-4 pb-8 text-sm font-medium leading-7 text-secondary-black">
+                  <Disclosure.Panel className="max-w-2xl px-4 pb-8 py-2 text-sm font-ps font-medium leading-7 text-secondary-black">
                     Mandatory requirements (for ETHCC AHH only): ZKML-Engineers
                     or ZK-enthusiasts who’s willing to combine ZKML with their
                     field of expertise (such as AI engineer or game developer).
@@ -127,7 +127,7 @@ export default function Questions() {
             {({ open }) => (
               <>
                 <Disclosure.Button className="flex w-full justify-between rounded-lg px-4 py-8 text-left text-sm font-medium border-t focus:outline-none focus-visible:ring focus-visible:ring-neutral-500 focus-visible:ring-opacity-75">
-                  <h1 className="text-6xl font-bold">
+                  <h1 className="text-6xl font-bold mr-auto flex-1">
                     What events will happen?
                   </h1>
                   <XMarkIcon
@@ -146,7 +146,7 @@ export default function Questions() {
                   leaveFrom="transform opacity-100 max-h-full"
                   leaveTo="transform opacity-0 max-h-0"
                 >
-                  <Disclosure.Panel className="max-w-2xl px-4 pb-8 text-sm font-medium leading-7 text-secondary-black">
+                  <Disclosure.Panel className="max-w-2xl px-4 pb-8 py-2 text-sm font-ps font-medium leading-7 text-secondary-black">
                     Mandatory requirements (for ETHCC AHH only): ZKML-Engineers
                     or ZK-enthusiasts who’s willing to combine ZKML with their
                     field of expertise (such as AI engineer or game developer).
@@ -162,7 +162,7 @@ export default function Questions() {
             {({ open }) => (
               <>
                 <Disclosure.Button className="flex w-full justify-between rounded-lg px-4 py-8 text-left text-sm font-medium border-t focus:outline-none focus-visible:ring focus-visible:ring-neutral-500 focus-visible:ring-opacity-75">
-                  <h1 className="text-6xl font-bold">What is Hacker State?</h1>
+                  <h1 className="text-6xl font-bold mr-auto flex-1">What is Hacker State?</h1>
                   <XMarkIcon
                     className={cx(
                       `transition-transform duration-300 delay-0 transform h-12 w-12`,
@@ -179,7 +179,7 @@ export default function Questions() {
                   leaveFrom="transform opacity-100 max-h-full"
                   leaveTo="transform opacity-0 max-h-0"
                 >
-                  <Disclosure.Panel className="max-w-2xl px-4 pb-8 text-sm font-medium leading-7 text-secondary-black">
+                  <Disclosure.Panel className="max-w-2xl px-4 pb-8 py-2 text-sm font-ps font-medium leading-7 text-secondary-black">
                     Mandatory requirements (for ETHCC AHH only): ZKML-Engineers
                     or ZK-enthusiasts who’s willing to combine ZKML with their
                     field of expertise (such as AI engineer or game developer).

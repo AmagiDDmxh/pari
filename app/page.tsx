@@ -6,7 +6,7 @@ import Footer from "#/components/Footer"
 
 export default function Home() {
   return (
-    <main className="mt-[72px]">
+    <main>
       <Hero />
       <Description />
       <HackerState />
