@@ -1,6 +1,6 @@
 export const siteConfig = {
   name: "Antalpha Labs",
-  url: "https://pari.antalpha.com/",
+  url: "https://pari.antalpha.com",
   ogImage: "https://labs.antalpha.com/og.jpg",
   description:
     "Antalpha Labs is a web3 developer community.",

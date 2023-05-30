@@ -13,11 +13,19 @@ export const metadata: Metadata = {
   keywords: ["Hacker House", "Hackathon", "Web3", "Antalpha", "Pari"],
   authors: [
     {
+      name: "antalpha",
+      url: "https://antalpha.com/",
+    },
+    {
+      name: "bonecat",
+      url: "https://twitter.com/bonecat6",
+    },
+    {
       name: "amagi",
       url: "https://amagi.love",
     },
   ],
-  creator: "amagi",
+  creator: "antalpha",
   openGraph: {
     type: "website",
     locale: "en_US",
@@ -39,7 +47,7 @@ export const metadata: Metadata = {
     title: siteConfig.name,
     description: siteConfig.description,
     images: [siteConfig.ogImage],
-    creator: "@amagi",
+    creator: "@antalpha",
   },
   icons: {
     icon: "/favicon.ico",
