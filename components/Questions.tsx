@@ -199,7 +199,7 @@ export default function Questions() {
                     Hacker state: An innovative experiment of the Network state,
                     for more please visit{" "}
                     <Link
-                      href="https://antalpha.notion.site/Not-so-lite-Litepaper-Forever-in-progress-0b185360b96346868328e7eba8b62437"
+                      href="https://antalpha.notion.site/AHH-ZKML-Paris-July-2023-5df765cda32140d5accd9f96963cc48a"
                       target="_blank"
                       rel="next"
                       className="underline underline-offset-4 decoration-1"
