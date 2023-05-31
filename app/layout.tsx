@@ -1,5 +1,6 @@
 import { Metadata } from "next"
 import localFont from "next/font/local"
+import { Analytics } from "@vercel/analytics/react"
 import Header from "#/components/Header"
 import { siteConfig } from "#/config/site"
 import "./globals.css"
@@ -93,6 +94,7 @@ export default function RootLayout({
       <body className={`${feijoa.className} ${pitchSans.variable}`}>
         <Header />
         {children}
+        <Analytics />
       </body>
     </html>
   )
